@@ -35,6 +35,7 @@ class Contenedor{
 
     update(prod, id){
         try {
+            prod.id = id;
             this.productos[id - 1] = prod; 
         } catch (error) {
            console.log(error) 
